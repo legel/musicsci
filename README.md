@@ -1,4 +1,4 @@
-This is a Python data science project for discovering relationships across music genres using Last.fm's API.
+This is a Python project for discovering relationships across music genres using Last.fm's API.
 
 ####In a terminal, run the following:
 `python GetTagData.py`
@@ -8,13 +8,13 @@ This is a Python data science project for discovering relationships across music
 - records the cooccurrence of each tag with every other tag as a list of dictionaries
 - filters tags that appear less than 5 times
 - saves TagNames.txt and TagCooccurrences.txt
-___
+
 `python ComputeTagSimilarities.py`
 
 - loads files from previous script
 - computes the similarity of each tag with every other tag using cosine similarity
 - saves TagSimilarities.txt
-___
+
 `python CompareSimilarityMetrics.py`
 
 - gets data from Last.fm's API method tag.getsimilar
@@ -22,7 +22,7 @@ ___
 - examines 10 matches and differences across random tags more closely, and returns a few points of statistics
 - plots a histogram showing total cross-over between Last.fm's API and our similarity metric
 - saves file SimilarTagMatches.txt
-___
+
 `pip install pytagcloud`
 
 `apt-get install python-pygame`
