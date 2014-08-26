@@ -12,7 +12,7 @@ ___
 - loads files from previous script
 - computes the similarity of each tag with every other tag using cosine similarity
 - saves TagSimilarities.txt
- ___
+___
 `python CompareSimilarityMetrics.py`
 
 - gets data from Last.fm's API method tag.getsimilar
@@ -28,6 +28,7 @@ ___
 
 - given a tag index, visualizes by size the similarities of other tags to it
 - saves output as cloud.png, would be easy to print more clouds as desired
+
 ___
 ####File Descriptions:
 `TagCooccurrences.txt` - Vectors of cooccurrence of each tag with every other tag, formatted as a list of dictionaries [ {d1}, {d2}, ...] with each dictionary giving non-zero counts with the tag number of the dictionary and every other tag.  e.g. "d2" may be {t1:7, t4:1, ...}, means that t2 and t1 cooccur 7 times; t2 and t4 coccur 1 time.
